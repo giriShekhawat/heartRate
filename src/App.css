@@ -1,0 +1,70 @@
+.heart-rate-monitor {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #9ac8ff;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.status-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #d93025;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.results-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+}
+
+.result-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.result-item-full {
+  grid-column: 1 / -1;
+}
